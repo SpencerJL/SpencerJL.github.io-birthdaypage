@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+        }
+
+        /* Card styling */
+        .birthday-card {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+            animation: pop-up 1s ease-out;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .heart {
+            font-size: 2rem;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #e63971;
+        }
+
+        /* Animations */
+        @keyframes pop-up {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-card">
+        <h1>🎉 生日快乐! 🎉</h1>
+        <h2>我家小仙女宝</h2>
+        <p class="message">
+            纵使生活没那么容易，我还是想和你走过余生。愿你不再脆弱到不堪一击，愿你强大到无懈可击，愿你眼中总有光芒，愿你活成你想要的模样。从现在起，答应自己的事情就尽力去做到，答应自己要去的地方就尽力去抵达 ❤️
+        </p>
+        <div class="heart">❤️</div>
+        <a href="#" class="button">有惊喜!</a>
+    </div>
+
+    <script>
+        // Optional JavaScript to enhance user experience
+        document.querySelector('.button').addEventListener('click', function() {
+            alert("你是我生命中最重要的人! 祝你生日快乐永远开心! ❤️");
+        });
+    </script>
+</body>
+</html>
